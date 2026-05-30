@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: Arial;
+  cursor: none;
+}
+
+/* TOP BAR */
+.topbar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mini-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* MAIN */
+.container {
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* CURSOR */
+.cursor {
+  width: 10px;
+  height: 10px;
+  background: white;
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px white;
+}
+const hoverItems = document.querySelectorAll("a, button, h1, h3");
+
+hoverItems.forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    ring.style.transform = "translate(-50%, -50%) scale(1.5)";
+    ring.style.border = "2px solid cyan";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    ring.style.transform = "translate(-50%, -50%) scale(1)";
+    ring.style.border = "2px solid white";
+  });
+});
