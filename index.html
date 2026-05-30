@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altahir Portfolio</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Arial, sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+p{
+    color:#bdbdbd;
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+    color:#000;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+</style>
+
+</head>
 <body>
 
-<header class="topbar">
-  <img src="me.jpg" class="mini-pic">
-  <h3>Your Name</h3>
-</header>
+<h1>ALTAHIR 🚀</h1>
+<p>Welcome to my portfolio website</p>
 
-<div class="container">
-  <h1>Web Developer</h1>
-  <p>I build websites</p>
-</div>
+<button onclick="alert('Website Working Successfully!')">
+    Explore
+</button>
 
-<div class="cursor"></div>
-
-<script src="script.js"></script>
 </body>
 </html>
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-<h1>TEST CHANGE ✔</h1>
